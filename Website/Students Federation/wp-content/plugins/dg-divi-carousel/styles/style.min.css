@@ -1,0 +1,465 @@
+.et-db #et-boc .et-fb-modules-list li.dica_divi_carousel .et-fb-icon {
+    padding-top: 7px;
+    padding-left: 7px
+}
+
+.et-db #et-boc .et-fb-modules-list li.dica_divi_carousel .et-fb-icon svg {
+    width: 16px !important;
+    height: 16px !important
+}
+
+.et-db #et-boc .et-fb-modules-list li.dica_divi_carousel {
+    background-color: #e1e7ec !important
+}
+
+.et-db #et-boc .et-fb-modules-list li.dica_divi_carousel:hover {
+    background-color: #94a7b7 !important;
+    color: #fff
+}
+
+.fancybox-container {
+    z-index: 999999
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px !important;
+    padding-top: 15px;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.swiper-wrapper {
+    height: auto !important;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-property: -webkit-transform !important;
+    transition-property: -webkit-transform !important;
+    -o-transition-property: transform !important;
+    transition-property: transform !important;
+    transition-property: transform, -webkit-transform !important;
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important
+}
+
+.dica_divi_carousel .dica_divi_carouselitem {
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: start;
+    margin-bottom: 0 !important;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+}
+
+:root .dica_divi_carousel .dica_divi_carouselitem .et_pb_module_inner,
+_:-ms-fullscreen {
+    -ms-flex: 1 1;
+    flex: 1 1
+}
+
+.dica_divi_carouselitem {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform !important;
+    transition-property: -webkit-transform !important;
+    -o-transition-property: transform !important;
+    transition-property: transform !important;
+    transition-property: transform, -webkit-transform !important
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top {
+    -webkit-transition-property: all !important;
+    -o-transition-property: all !important;
+    transition-property: all !important
+}
+
+.swiper-container-3d .swiper-slide-shadow-left {
+    background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, .5), transparent) !important;
+    background-image: -o-linear-gradient(right, rgba(0, 0, 0, .5), transparent) !important;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, .5)), to(transparent)) !important;
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, .5), transparent) !important
+}
+
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5), transparent) !important;
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5), transparent) !important;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, .5)), to(transparent)) !important;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, .5), transparent) !important
+}
+
+.dica_divi_carouselitem .et_pb_module_inner {
+    width: 100%;
+    height: 100%
+}
+
+.dica_divi_carousel .dica_divi_carouselitem .dica-item-content h4 {
+    font-size: 20px
+}
+
+.dica_divi_carousel .dica_divi_carouselitem .dica-item.empty-content .dica-item-content {
+    display: none
+}
+
+.dica_divi_carousel .dica_divi_carouselitem .dica-item-content {
+    font-size: 14px
+}
+
+#et-boc .dica_divi_carousel .dica_divi_carouselitem .dica-image-container a {
+    padding-bottom: 0
+}
+
+.dica_divi_carousel .dica_divi_carouselitem .dica-image-container {
+    position: relative;
+    overflow: hidden
+}
+
+#et-boc .dica_divi_carousel .dica_divi_carouselitem .dica-image-container img,
+.dica_divi_carousel .dica_divi_carouselitem .dica-image-container img {
+    border-style: solid;
+    display: block;
+    border-width: 0
+}
+
+#et-boc .dica_divi_carousel .dica_divi_carouselitem,
+.dica_divi_carousel .dica_divi_carouselitem {
+    border-style: solid;
+    border-width: 0
+}
+
+.dica-container .swiper-button-next,
+.dica-container .swiper-button-prev {
+    background-image: none !important;
+    width: 53px;
+    font-size: 53px;
+    height: 53px;
+    background-color: #fff;
+    margin-top: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    line-height: .96em
+}
+
+.dica-container .swiper-button-next {
+    -webkit-transition: all .4s ease !important;
+    -o-transition: all .4s ease !important;
+    transition: all .4s ease !important
+}
+
+.dica-container:hover .swiper-button-next {
+    right: 10px
+}
+
+.dica-container .swiper-button-prev {
+    -webkit-transition: all .3s ease !important;
+    -o-transition: all .3s ease !important;
+    transition: all .3s ease !important
+}
+
+.dica-container:hover .swiper-button-prev {
+    left: 10px
+}
+
+.dica-container .swiper-button-next:before,
+.dica-container .swiper-button-prev:before {
+    content: attr(data-icon);
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: ETmodules;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    text-transform: none;
+    color: #0c71c3;
+    speak: none;
+    vertical-align: super
+}
+
+.dica_divi_carousel .dica_divi_carouselitem .dica-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.dica_divi_carousel .dica_divi_carouselitem .dica-item.loading .dica-image-container img {
+    min-height: 100px
+}
+
+.dica_divi_carousel .dica_divi_carouselitem .dica-item.loading .dica-image-container {
+    margin-bottom: auto
+}
+
+.dica_divi_carousel .dica_divi_carouselitem .dica-item.loading .dica-item-content {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-top: auto
+}
+
+.dica-container .swiper-button-next {
+    right: 10px
+}
+
+.dica-container .swiper-button-prev {
+    left: 10px
+}
+
+.dica-container.arrow-outer-position .swiper-button-next {
+    right: -62px;
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s
+}
+
+.dica-container.arrow-outer-position .swiper-button-prev {
+    left: -62px;
+    -webkit-transition-delay: .3s;
+    -o-transition-delay: .3s;
+    transition-delay: .3s
+}
+
+.dica-container:not(.arrow-outer-position) {
+    overflow: hidden
+}
+
+@media (max-width:615px) {
+    .dica-container.arrow-outer-position .swiper-button-next {
+        right: 0
+    }
+    .dica-container.arrow-outer-position .swiper-button-prev {
+        left: 0
+    }
+}
+
+.dica-container.arrow-show-hover .swiper-button-next,
+.dica-container.arrow-show-hover .swiper-button-prev {
+    opacity: 0
+}
+
+.dica-container.arrow-show-hover:hover .swiper-button-next,
+.dica-container.arrow-show-hover:hover .swiper-button-prev {
+    opacity: 1
+}
+
+.dica-container.arrow-show-hover .swiper-button-next {
+    right: -50px
+}
+
+.dica-container.arrow-show-hover .swiper-button-prev {
+    left: -50px
+}
+
+.dica-container.arrow-show-hover:hover .swiper-button-next {
+    right: 10px
+}
+
+.dica-container.arrow-show-hover:hover .swiper-button-prev {
+    left: 10px
+}
+
+.dica-container.arrow-show-hover.arrow-outer-position .swiper-button-next {
+    right: 50px
+}
+
+.dica-container.arrow-show-hover.arrow-outer-position .swiper-button-prev {
+    left: 50px
+}
+
+.dica-container.arrow-show-hover.arrow-outer-position .swiper-button-next:hover,
+.dica-container.arrow-show-hover.arrow-outer-position:hover .swiper-button-next {
+    right: -62px
+}
+
+.dica-container.arrow-show-hover.arrow-outer-position .swiper-button-prev:hover,
+.dica-container.arrow-show-hover.arrow-outer-position:hover .swiper-button-prev {
+    left: -62px
+}
+
+.dica-container .swiper-pagination {
+    width: 100%
+}
+
+.dica_divi_carousel .swiper-pagination-bullet {
+    border-radius: 100% !important;
+    opacity: 1;
+    margin-right: 4px !important
+}
+
+.dica-container .et_pb_button_wrapper {
+    margin-top: 10px
+}
+
+.overlay-image .dica-item .dica-image-container {
+    position: relative
+}
+
+.overlay-image .dica-item .dica-image-container a.image:before {
+    content: "";
+    background: hsla(0, 0%, 100%, .81);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 1
+}
+
+.overlay-image .dica-item .dica-image-container a.image:after {
+    content: "1";
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: ETmodules;
+    font-size: 26px;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1;
+    text-transform: none;
+    speak: none;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(0) translateX(-50%);
+    transform: translateY(0) translateX(-50%);
+    left: 50%;
+    color: #58b4f4;
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 1
+}
+
+.overlay-image .dica-item:hover .dica-image-container a.image:before {
+    opacity: 1
+}
+
+.overlay-image .dica-item:hover .dica-image-container a.image:after {
+    opacity: 1;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%)
+}
+
+.swiper-container-coverflow .swiper-wrapper .swiper-slide-active {
+    -webkit-transform: translateZ(0) rotateX(0deg) rotateY(0deg) !important;
+    transform: translateZ(0) rotateX(0deg) rotateY(0deg) !important
+}
+
+.dg-carousel-lightbox {
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    width: 0;
+    height: 0;
+    display: none
+}
+
+.dg-carousel-lightbox.open {
+    opacity: 1;
+    width: auto;
+    height: auto;
+    position: fixed;
+    background-color: rgba(51, 51, 51, .88);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    padding-bottom: 30px;
+    display: block
+}
+
+.dg-carousel-lightbox.open .lightbox-header {
+    text-align: right
+}
+
+.dg-carousel-lightbox.open .image-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-height: 100%;
+    margin: 0 auto;
+    height: 100%;
+    white-space: nowrap;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.dg-carousel-lightbox .image-wrapper img {
+    -webkit-transform: scale(0);
+    transform: scale(0)
+}
+
+@-webkit-keyframes imageAnimation {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes imageAnimation {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.dg-carousel-lightbox.open .image-wrapper span {
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
+.dg-carousel-lightbox.open .image-wrapper img {
+    max-height: 85vh;
+    -webkit-animation-name: imageAnimation;
+    animation-name: imageAnimation;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    vertical-align: middle
+}
+
+.dg-carousel-lightbox.open .close-btn {
+    background-color: rgba(0, 0, 0, .57);
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px
+}

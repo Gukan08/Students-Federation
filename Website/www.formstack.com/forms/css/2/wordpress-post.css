@@ -1,0 +1,16 @@
+.post .fsForm td,
+.post .fsForm th {
+    border: none;
+    padding: inherit
+}
+
+.fsForm .fsCell {
+    padding: 9px 18px !important
+}
+
+.fsRowBottom,
+.fsRowClose,
+.fsRowOpen,
+.fsRowTop {
+    display: none
+}

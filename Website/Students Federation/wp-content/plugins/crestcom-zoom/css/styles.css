@@ -1,0 +1,552 @@
+.cz-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99999;
+}
+
+.cz-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cz-zoom-popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    width: calc(100% - 20px);
+    max-width: 700px;
+    max-height: calc(100vh - 140px);
+    overflow-y: scroll;
+    border-top: 5px solid #212240;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.cz-zoom-popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.cz-zoom-popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.cz-zoom-popup .close:hover {
+    color: #06d85f;
+}
+
+.cz-zoom-popup .content {
+    overflow: auto;
+}
+
+.cz-zoom-popup .content .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+}
+
+.cz-zoom-popup .content .form_wrapper {
+    background: #fff;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin: 8% auto 0;
+    position: relative;
+    z-index: 1;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: expand 0.8s 0.6s ease-out forwards;
+    animation: expand 0.8s 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.cz-zoom-popup .content .form_wrapper h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.cz-zoom-popup .content .form_wrapper .title_container {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.cz-zoom-popup .content .form_wrapper h3 {
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+.cz-zoom-popup .content .form_wrapper label {
+    font-size: 12px;
+}
+
+.cz-zoom-popup .content .form_wrapper .row {
+    margin: 10px -15px;
+}
+
+.cz-zoom-popup .content .form_wrapper .row>div {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.cz-zoom-popup .content .form_wrapper .col_half {
+    width: 50%;
+    float: left;
+}
+
+.cz-zoom-popup .content .form_wrapper .input_field {
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-animation: bounce 0.6s ease-out;
+    animation: bounce 0.6s ease-out;
+}
+
+.cz-zoom-popup .content .form_wrapper .input_field.checkbox_option:not(.last) {
+    margin-bottom: 0px;
+}
+
+.cz-zoom-popup .content .form_wrapper .input_field.errors {
+    border: 2px solid red;
+    padding: 10px 15px 0;
+    color: red;
+    display: none;
+}
+
+.cz-zoom-popup .content .errors-active .form_wrapper .input_field.errors {
+    display: block;
+}
+
+div#cz-webinar-succcess {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.cz-zoom-popup .content .form_wrapper .input_field>span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #333;
+    height: 100%;
+    border-right: 1px solid #cccccc;
+    text-align: center;
+    width: 30px;
+}
+
+.cz-zoom-popup .content .form_wrapper .input_field>span>i {
+    padding-top: 10px;
+}
+
+.cz-zoom-popup .content .form_wrapper .textarea_field>span>i {
+    padding-top: 10px;
+}
+
+.cz-zoom-popup .content .form_wrapper input[type="text"],
+.cz-zoom-popup .content .form_wrapper input[type="email"],
+.cz-zoom-popup .content .form_wrapper input[type="password"] {
+    width: 100%;
+    padding: 8px 10px 9px 35px;
+    height: 35px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cz-zoom-popup .content .form_wrapper input[type="text"]:hover,
+.cz-zoom-popup .content .form_wrapper input[type="email"]:hover,
+.cz-zoom-popup .content .form_wrapper input[type="password"]:hover {
+    background: #fafafa;
+}
+
+.cz-zoom-popup .content .form_wrapper input[type="text"]:focus,
+.cz-zoom-popup .content .form_wrapper input[type="email"]:focus,
+.cz-zoom-popup .content .form_wrapper input[type="password"]:focus {
+    -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    border: 1px solid #212240;
+    background: #fafafa;
+}
+
+.cz-zoom-popup .content .form_wrapper input[type="submit"] {
+    background: #212240;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cz-zoom-popup .content .form_wrapper input[type="submit"]:hover {
+    background: #151528;
+}
+
+.cz-zoom-popup .content .form_wrapper input[type="submit"]:focus {
+    background: #151528;
+}
+
+.cz-zoom-popup .content .form_wrapper input[type="checkbox"],
+.cz-zoom-popup .content .form_wrapper input[type="radio"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.cz-zoom-popup .content .form_container .row .col_half.last {
+    border-left: 1px solid #cccccc;
+}
+
+.cz-zoom-popup .content .checkbox_option label {
+    margin-right: 1em;
+    position: relative;
+}
+
+.cz-zoom-popup .content .checkbox_option label:before {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.5em;
+    vertical-align: -2px;
+    border: 2px solid #cccccc;
+    padding: 0.12em;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+}
+
+.cz-zoom-popup .content .checkbox_option label:after {
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 7px;
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    width: 7px;
+    display: none;
+}
+
+.cz-zoom-popup .content .checkbox_option input:hover+label:before {
+    border-color: #000000;
+}
+
+.cz-zoom-popup .content .checkbox_option input:checked+label:before {
+    border-color: #000000;
+}
+
+.cz-zoom-popup .content .checkbox_option input:checked+label:after {
+    -moz-animation: check 0.8s ease 0s running;
+    -webkit-animation: check 0.8s ease 0s running;
+    animation: check 0.8s ease 0s running;
+    display: block;
+    width: 7px;
+    height: 20px;
+    border-color: #000000;
+}
+
+.cz-zoom-popup .content .radio_option label {
+    margin-right: 1em;
+}
+
+.cz-zoom-popup .content .radio_option label:before {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 100%;
+    vertical-align: -3px;
+    border: 2px solid #cccccc;
+    padding: 0.15em;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+}
+
+.cz-zoom-popup .content .radio_option input:hover+label:before {
+    border-color: #000000;
+}
+
+.cz-zoom-popup .content .radio_option input:checked+label:before {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.cz-zoom-popup .content .select_option {
+    position: relative;
+    width: 100%;
+}
+
+.cz-zoom-popup .content .select_option select {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px 0px 35px;
+    cursor: pointer;
+    color: #7b7b7b;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.2s ease;
+}
+
+.cz-zoom-popup .content .select_option select::-ms-expand {
+    display: none;
+}
+
+.cz-zoom-popup .content .select_option select:hover,
+.cz-zoom-popup .content .select_option select:focus {
+    color: #000000;
+    background: #fafafa;
+    border-color: #000000;
+    outline: none;
+}
+
+.cz-zoom-popup .content .select_arrow {
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+}
+
+.cz-zoom-popup .content .select_option select:hover+.select_arrow,
+.cz-zoom-popup .content .select_option select:focus+.select_arrow {
+    border-top-color: #000000;
+}
+
+.cz-zoom-popup .content .credit {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 15px;
+    color: #212240;
+}
+
+.cz-zoom-popup .content .credit a {
+    color: #151528;
+}
+
+.cz-webinar-info {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cz-webinar-info .cz-webinar-image {
+    max-width: 200px;
+}
+
+.cz-webinar-info .cz-webinar-text {
+    padding: 0 0 0 20px;
+    max-width: calc( 100% - 220px);
+}
+
+@-webkit-keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 7px;
+    }
+    50% {
+        height: 20px;
+        width: 7px;
+    }
+}
+
+@keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+    25% {
+        height: 0;
+        width: 7px;
+    }
+    50% {
+        height: 20px;
+        width: 7px;
+    }
+}
+
+@-webkit-keyframes expand {
+    0% {
+        -webkit-transform: scale3d(1, 0, 1);
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: scale3d(1, 1.2, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1, 0.85, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1, 1.05, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes expand {
+    0% {
+        -webkit-transform: scale3d(1, 0, 1);
+        transform: scale3d(1, 0, 1);
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: scale3d(1, 1.2, 1);
+        transform: scale3d(1, 1.2, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1, 0.85, 1);
+        transform: scale3d(1, 0.85, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1, 1.05, 1);
+        transform: scale3d(1, 1.05, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translate3d(0, -25px, 0);
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: translate3d(0, 10px, 0);
+    }
+    50% {
+        -webkit-transform: translate3d(0, -6px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, 2px, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translate3d(0, -25px, 0);
+        transform: translate3d(0, -25px, 0);
+        opacity: 0;
+    }
+    25% {
+        -webkit-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+    }
+    50% {
+        -webkit-transform: translate3d(0, -6px, 0);
+        transform: translate3d(0, -6px, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(0, 2px, 0);
+        transform: translate3d(0, 2px, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .cz-zoom-popup {
+        margin: 20% auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cz-zoom-popup {
+        width: 70%;
+        margin: 30% auto;
+    }
+    .cz-webinar-info .cz-webinar-image,
+    .cz-webinar-info .cz-webinar-text,
+    .cz-zoom-popup .content .form_wrapper .col_half {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .cz-zoom-popup .form_wrapper .col_half {
+        width: 100%;
+        float: none;
+    }
+    .cz-zoom-popup .bottom_row .col_half {
+        width: 50%;
+        float: left;
+    }
+    .cz-zoom-popup .form_container .row .col_half.last {
+        border-left: none;
+    }
+    .cz-zoom-popup .remember_me {
+        padding-bottom: 20px;
+    }
+}

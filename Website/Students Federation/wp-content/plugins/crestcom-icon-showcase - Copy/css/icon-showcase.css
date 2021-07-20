@@ -1,0 +1,523 @@
+.crestcom-icon-holder {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.crestcom-icon-holder.crestcom-icon-circle,
+.crestcom-icon-holder.crestcom-icon-square {
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    -webkit-transition: background-color .8s cubic-bezier(.19, .65, .02, .93), border-color .8s cubic-bezier(.19, .65, .02, .93);
+    -moz-transition: background-color .8s cubic-bezier(.19, .65, .02, .93), border-color .8s cubic-bezier(.19, .65, .02, .93);
+    transition: background-color .8s cubic-bezier(.19, .65, .02, .93), border-color .8s cubic-bezier(.19, .65, .02, .93)
+}
+
+.crestcom-icon-holder.crestcom-icon-circle a,
+.crestcom-icon-holder.crestcom-icon-square a {
+    display: inline-block;
+    width: 100%;
+    height: 100%
+}
+
+.crestcom-icon-holder.crestcom-icon-circle {
+    border-radius: 50%
+}
+
+.crestcom-icon-holder.crestcom-icon-tiny {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%
+}
+
+.crestcom-icon-holder.crestcom-icon-small {
+    font-size: 2em
+}
+
+.crestcom-icon-holder.crestcom-icon-medium {
+    font-size: 3em
+}
+
+.crestcom-icon-holder.crestcom-icon-large {
+    font-size: 4em
+}
+
+.crestcom-icon-holder.crestcom-icon-huge {
+    font-size: 5em
+}
+
+.crestcom-icon-holder .crestcom-icon-element {
+    line-height: inherit;
+    color: #fff;
+    -webkit-transition: color .8s cubic-bezier(.19, .65, .02, .93);
+    -moz-transition: color .8s cubic-bezier(.19, .65, .02, .93);
+    transition: color .8s cubic-bezier(.19, .65, .02, .93)
+}
+
+.crestcom-icon-holder .crestcom-icon-element:before {
+    line-height: inherit
+}
+
+img.crestcom-icon-image {
+    max-width: calc( 100% - 35px);
+    max-height: calc( 100% - 35px);
+    vertical-align: text-bottom;
+}
+
+.crestcom-int-icon-showcase {
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+    position: relative
+}
+
+.crestcom-int-icon-showcase .crestcom-int-icon-showcase-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    margin: 50px
+}
+
+.crestcom-int-icon-showcase .crestcom-int-icon-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    margin: 50px;
+    background-color: transparent;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all .85s cubic-bezier(.18, .89, .32, 1.28);
+    -moz-transition: all .85s cubic-bezier(.18, .89, .32, 1.28);
+    transition: all .85s cubic-bezier(.18, .89, .32, 1.28);
+    -webkit-transform: scale(.1, .1);
+    -moz-transform: scale(.1, .1);
+    transform: scale(.1, .1)
+}
+
+.touch .no_animation_on_touch .crestcom-int-icon-showcase-player .crestcom-int-icon-circle {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1)
+}
+
+.crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-int-icon-circle {
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    transform: scale(1, 1)
+}
+
+.crestcom-int-icon-showcase-player .crestcom-showcase-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: opacity .3s ease-out;
+    -moz-transition: opacity .3s ease-out;
+    transition: opacity .3s ease-out
+}
+
+.crestcom-int-icon-showcase .crestcom-showcase-content {}
+
+.crestcom-int-icon-showcase .crestcom-showcase-content .crestcom-section-subtitle {
+    text-transform: capitalize
+}
+
+.crestcom-int-icon-showcase .crestcom-showcase-content .crestcom-showcase-content-inner {
+    margin-top: 18px;
+    color: #000;
+}
+
+.crestcom-int-icon-showcase .crestcom-showcase-content-table {
+    display: table;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed
+}
+
+.crestcom-int-icon-showcase .crestcom-showcase-content-cell {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 20%
+}
+
+.crestcom-showcase-icon {
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transform: translate(-50%, -50%) scale(1.01);
+    -moz-transform: translate(-50%, -50%) scale(1.01);
+    transform: translate(-50%, -50%) scale(1.01)
+}
+
+.touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-icon {
+    -webkit-transition: opacity .2s ease !important;
+    transition: opacity .2s ease !important;
+    -webkit-transition-delay: 0s !important;
+    transition-delay: 0s !important
+}
+
+.crestcom-showcase-icon .crestcom-icon-holder.crestcom-icon-circle {
+    background-color: #fff
+}
+
+.crestcom-showcase-icon .crestcom-icon-holder.crestcom-icon-circle .crestcom-icon-element {
+    color: #ddd
+}
+
+.crestcom-showcase-icon .crestcom-icon-holder {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-size: 38px
+}
+
+.crestcom-showcase-item-holder.crestcom-showcase-active .crestcom-icon-holder.crestcom-icon-circle {
+    background-color: #ddd !important
+}
+
+.crestcom-showcase-item-holder.crestcom-showcase-active .crestcom-icon-holder.crestcom-icon-circle .crestcom-icon-element {
+    color: #fff
+}
+
+.crestcom-showcase-item-holder.crestcom-showcase-active .crestcom-showcase-content {
+    opacity: 1
+}
+
+.crestcom-showcase-item-holder .crestcom-showcase-icon {
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: opacity .2s ease, top .5s cubic-bezier(.18, .89, .32, 1), left .5s cubic-bezier(.18, .89, .32, 1), -webkit-transform .5s ease;
+    transition: opacity .2s ease, top .5s cubic-bezier(.18, .89, .32, 1), left .5s cubic-bezier(.18, .89, .32, 1), transform .5s ease
+}
+
+.crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder .crestcom-showcase-icon,
+.touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder .crestcom-showcase-icon {
+    opacity: 1
+}
+
+/* Twelve item showcase */
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:first-child .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:first-child .crestcom-showcase-icon {
+    top: 0;
+    left: 50%;
+    -webkit-transition-delay: .65s;
+    transition-delay: .65s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(2) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(2) .crestcom-showcase-icon {
+    top: 7.3%;
+    left: 75.6%;
+    -webkit-transition-delay: .85s;
+    transition-delay: .85s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(3) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(3) .crestcom-showcase-icon {
+    top: 25.8%;
+    left: 92.6%;
+    -webkit-transition-delay: 1.05s;
+    transition-delay: 1.05s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(4) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(4) .crestcom-showcase-icon {
+    top: 50%;
+    left: 100%;
+    -webkit-transition-delay: 1.25s;
+    transition-delay: 1.25s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(5) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(5) .crestcom-showcase-icon {
+    top: 74.2%;
+    left: 92.6%;
+    -webkit-transition-delay: 1.45s;
+    transition-delay: 1.45s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(6) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(6) .crestcom-showcase-icon {
+    top: 92.7%;
+    left: 75.6%;
+    -webkit-transition-delay: 1.65s;
+    transition-delay: 1.65s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(7) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(7) .crestcom-showcase-icon {
+    top: 100%;
+    left: 50%;
+    -webkit-transition-delay: 1.85s;
+    transition-delay: 1.85s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(8) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(8) .crestcom-showcase-icon {
+    top: 92.7%;
+    left: 24.4%;
+    -webkit-transition-delay: 2.05s;
+    transition-delay: 2.05s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(9) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(9) .crestcom-showcase-icon {
+    top: 74.2%;
+    left: 7.4%;
+    -webkit-transition-delay: 2.25s;
+    transition-delay: 2.25s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(10) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(10) .crestcom-showcase-icon {
+    top: 50%;
+    left: 0%;
+    -webkit-transition-delay: 2.45s;
+    transition-delay: 2.45s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(11) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(11) .crestcom-showcase-icon {
+    top: 26.8%;
+    left: 7.4%;
+    -webkit-transition-delay: 2.65s;
+    transition-delay: 2.65s
+}
+
+.icon-container-12 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(12) .crestcom-showcase-icon,
+.icon-container-12 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(12) .crestcom-showcase-icon {
+    top: 7.3%;
+    left: 24.4%;
+    -webkit-transition-delay: 2.85s;
+    transition-delay: 2.85s
+}
+
+/* Five item showcase */
+
+.icon-container-5 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:first-child .crestcom-showcase-icon,
+.icon-container-5 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:first-child .crestcom-showcase-icon {
+    top: 0;
+    left: 50%;
+    -webkit-transition-delay: .65s;
+    transition-delay: .65s
+}
+
+.icon-container-5 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(2) .crestcom-showcase-icon,
+.icon-container-5 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(2) .crestcom-showcase-icon {
+    top: 24%;
+    left: 91.7%;
+    -webkit-transition-delay: .85s;
+    transition-delay: .85s
+}
+
+.icon-container-5 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(3) .crestcom-showcase-icon,
+.icon-container-5 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(3) .crestcom-showcase-icon {
+    top: 76%;
+    left: 91.7%;
+    -webkit-transition-delay: 1.05s;
+    transition-delay: 1.05s
+}
+
+.icon-container-5 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(4) .crestcom-showcase-icon,
+.icon-container-5 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(4) .crestcom-showcase-icon {
+    top: 76%;
+    left: 8%;
+    -webkit-transition-delay: 1.25s;
+    transition-delay: 1.25s
+}
+
+.icon-container-5 .crestcom-int-icon-showcase-player.crestcom-appeared .crestcom-showcase-item-holder:nth-child(5) .crestcom-showcase-icon,
+.icon-container-5 .touch .no_animation_on_touch .crestcom-int-icon-showcase .crestcom-showcase-item-holder:nth-child(5) .crestcom-showcase-icon {
+    top: 24%;
+    left: 8%;
+    -webkit-transition-delay: 1.45s;
+    transition-delay: 1.45s
+}
+
+@media only screen and (max-width: 600px) {
+    .crestcom-int-icon-showcase .crestcom-int-icon-circle,
+    .crestcom-int-icon-showcase .crestcom-int-icon-showcase-inner {
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);
+        margin: 30px;
+    }
+    .crestcom-showcase-icon .crestcom-icon-holder {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        font-size: 20px;
+    }
+    .crestcom-showcase-content-inner {
+        display: none;
+    }
+}
+
+/* Four item showcase */
+
+.icon-container-4 .crestcom-showcase-icon .crestcom-icon-holder.crestcom-icon-circle {
+    background: transparent !important;
+    border: none;
+}
+
+.crestcom-int-icon-showcase-player.crestcom-appeared .icon-container-4 .crestcom-showcase-item-holder:first-child .crestcom-showcase-icon,
+.touch .no_animation_on_touch .crestcom-int-icon-showcase .icon-container-4 .crestcom-showcase-item-holder:first-child .crestcom-showcase-icon {
+    top: 20%;
+    left: 22%;
+    -webkit-transition-delay: .85s;
+    transition-delay: .85s
+}
+
+.crestcom-int-icon-showcase-player.crestcom-appeared .icon-container-4 .crestcom-showcase-item-holder:nth-child(2) .crestcom-showcase-icon,
+.touch .no_animation_on_touch .crestcom-int-icon-showcase .icon-container-4 .crestcom-showcase-item-holder:nth-child(2) .crestcom-showcase-icon {
+    top: 22%;
+    left: 80%;
+    -webkit-transition-delay: 1.05s;
+    transition-delay: 1.05s
+}
+
+.crestcom-int-icon-showcase-player.crestcom-appeared .icon-container-4 .crestcom-showcase-item-holder:nth-child(3) .crestcom-showcase-icon,
+.touch .no_animation_on_touch .crestcom-int-icon-showcase .icon-container-4 .crestcom-showcase-item-holder:nth-child(3) .crestcom-showcase-icon {
+    top: 82%;
+    left: 77%;
+    -webkit-transition-delay: 1.25s;
+    transition-delay: 1.25s
+}
+
+.crestcom-int-icon-showcase-player.crestcom-appeared .icon-container-4 .crestcom-showcase-item-holder:nth-child(4) .crestcom-showcase-icon,
+.touch .no_animation_on_touch .crestcom-int-icon-showcase .icon-container-4 .crestcom-showcase-item-holder:nth-child(4) .crestcom-showcase-icon {
+    top: 76%;
+    left: 18%;
+    -webkit-transition-delay: 1.45s;
+    transition-delay: 1.45s
+}
+
+.icon-container-4 svg.process-wheel-svg .num1 {
+    fill: #212240;
+}
+
+.icon-container-4 svg.process-wheel-svg .num2 {
+    fill: #FFFFFF;
+}
+
+.icon-container-4 svg.process-wheel-svg .num3 {
+    fill: #212240;
+}
+
+.icon-container-4 svg.process-wheel-svg .num4 {
+    fill: #FFFFFF;
+}
+
+.icon-container-4 .crestcom-int-icon-showcase .crestcom-int-icon-circle {
+    border: none;
+}
+
+.crestcom-wheel-content-holder {
+    opacity: 0;
+    position: absolute;
+    top: -50px;
+    -webkit-transition: opacity .2s ease, top .5s cubic-bezier(.18, .89, .32, 1), left .5s cubic-bezier(.18, .89, .32, 1), -webkit-transform .5s ease;
+    transition: opacity .2s ease, top .5s cubic-bezier(.18, .89, .32, 1), left .5s cubic-bezier(.18, .89, .32, 1), transform .5s ease
+}
+
+div[data-target="num1-active"] .crestcom-wheel-content-holder.contentnum-1 {
+    opacity: 1;
+}
+
+div[data-target="num2-active"] .crestcom-wheel-content-holder.contentnum-2 {
+    opacity: 1;
+}
+
+div[data-target="num3-active"] .crestcom-wheel-content-holder.contentnum-3 {
+    opacity: 1;
+}
+
+div[data-target="num4-active"] .crestcom-wheel-content-holder.contentnum-4 {
+    opacity: 1;
+}
+
+#cc-wheel-row .crestcom-int-icon-showcase .crestcom-showcase-content-cell {
+    padding: 0 calc( 20% + 25px);
+}
+
+div[data-target="num1-active"] svg.process-wheel-svg .num1 {
+    fill: #ddd !important;
+}
+
+div[data-target="num2-active"] svg.process-wheel-svg .num2 {
+    fill: #ddd !important;
+}
+
+div[data-target="num3-active"] svg.process-wheel-svg .num3 {
+    fill: #ddd !important;
+}
+
+div[data-target="num4-active"] svg.process-wheel-svg .num4 {
+    fill: #ddd !important;
+}
+
+.icon-container-4 .crestcom-showcase-item-holder.crestcom-showcase-active .crestcom-icon-holder.crestcom-icon-circle .crestcom-icon-element {
+    color: #212240 !important
+}
+
+.cc-wheel-content {
+    position: relative;
+    display: block;
+}
+
+#cc-wheel-row .crestcom-int-icon-showcase-player {
+    width: 85%;
+}
+
+.cc-wheel-content {
+    margin-top: 40px;
+}
+
+#cc-wheel-row .crestcom-showcase-content h2 {
+    font-size: 20px;
+    word-break: break-word;
+}
+
+@media (min-width: 768px) {
+    #cc-wheel-row .crestcom-int-icon-showcase-player {
+        width: 70%;
+    }
+    #cc-wheel-row .crestcom-showcase-content h2 {
+        font-size: 26px;
+        padding: 0;
+    }
+}
+
+@media (min-width: 981px) {
+    #cc-wheel-row .crestcom-int-icon-showcase-player {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    #cc-wheel-row .cc-wheel-content>div {
+        width: 100%;
+        text-align: center;
+        top: 0;
+    }
+}

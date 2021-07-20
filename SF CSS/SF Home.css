@@ -1,0 +1,79 @@
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+    body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        padding: 30px 100px;
+        box-sizing: border-box;
+        background: white;
+        transition: .5s;
+        background: white;
+    }
+    nav .logo 
+    {
+        float: right;
+    }
+    nav .logo img
+    {
+        height: 80px;
+        transition: .5s;
+    }
+    nav ul
+    {
+        float: right;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    nav ul li
+    {
+        list-style: none;
+    }
+    nav ul li a
+    {
+        line-height: 50px;
+        color: black;
+        padding: 10px 20px;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 1s;
+    }
+    nav ul li a.active,
+    nav ul li a:hover
+    {
+        color: #fff;
+        background: #1b234a;
+        
+    }
+    nav ul li a.active
+    {
+        color: #fff;
+        background: #ff7f00;
+        
+    }
+    section.sec1
+    {
+        width: 100%;
+        height: 100vh;
+        background: url('/SF IMAG/SF LOGO/R.jfif');
+        background-size: cover;
+    }
+    section.sec3
+    {
+        width: 100%;
+        height: 10vh;
+        background: url('/SF IMAG/SF Image/OB\ 2.png');
+        background-size: cover;
+    }
+    section.content
+    {
+        padding: 100%;
+    }

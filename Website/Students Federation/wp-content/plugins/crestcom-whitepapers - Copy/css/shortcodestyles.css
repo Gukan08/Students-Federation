@@ -1,0 +1,23 @@
+#lrwhitepapers .et_pb_row,
+#lrwebinars .et_pb_row {
+    text-align: center;
+}
+
+#lrwhitepapers .whitepaperimg img,
+#lrwebinars .whitepaperimg img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#lrwhitepapers .whitepapercontent,
+#lrwebinars .whitepapercontent {
+    padding-top: 20px;
+}
+
+#webinarForm .et_pb_button,
+#webinarForm .et_pb_button:hover {
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 980px) {}
