@@ -1,12 +1,4 @@
 
- Theme Name:     Crestcom Theme
- Description:    Custom child theme for Divi framework
- Author:         Shompton Digital Agency
- Author URI:     https://shompton.com
- Template:       Divi
- Version:        1.0.0
-
-
 /* =Theme customization starts here
 ------------------------------------------------------- */
 
@@ -650,7 +642,7 @@ body a.contactProfile:hover,
         padding: 0 20px
     }
     .et_mobile_menu {
-        border-color: #fff !important;
+        border-color: #1b234a !important;
     }
     .mobile_menu_bar:before {
         font-size: 45px;
