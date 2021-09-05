@@ -1,24 +1,3 @@
-/**
- * This generates the main style.css file. These styles are not wrapped in any additional classes.
- */
-
-/**
- * Initial portion of the Divi Theme style.css file. This includes a combination of theme and builder styles. Various files are separated so that they can be wrapped in specific selectors to increase specificity on custom post types and when used in the Divi Builder plugin.
- */
-
-/*!
-Theme Name: Divi
-Theme URI: http://www.elegantthemes.com/gallery/divi/
-Version: 3.23.3
-Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
-Author: Elegant Themes
-Author URI: http://www.elegantthemes.com
-Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
-License: GNU General Public License v2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-*/
-
-/* Browser Reset */
 
 html,
 body,
@@ -107,23 +86,6 @@ q:after {
     content: none;
 }
 
-blockquote {
-    margin: 20px 0 30px;
-    padding-left: 20px;
-    border-left: 5px solid;
-}
-
-:focus {
-    outline: 0;
-}
-
-ins {
-    text-decoration: none;
-}
-
-del {
-    text-decoration: line-through;
-}
 
 table {
     border-spacing: 0;
